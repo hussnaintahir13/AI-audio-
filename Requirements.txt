@@ -1,2 +1,6 @@
 sqlalchemy
-database
+uvicorn
+FastAPI
+pydantic
+passlib
+jose
