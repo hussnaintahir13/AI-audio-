@@ -1,7 +1,10 @@
-import sqlalchemy
+from sqlalchemy import create_engine
+from sqlalchemy.orm import declarative_base
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
 
 
-DATABASE_URL= 'postgresql://username:hussnaintahir13@host/postgres'
-engine=sqlalchemy.create_engine(DATABASE_URL)
-Base=sqlalchemy.declarative_base
-SessionLocal =sqlalchemy.sessionmaker(bind=engine,expire_on_commit=False)
+DATABASE_URL= 'postgresql://postgres:hussnaintahir13@localhost:5432/projectdata'
+engine=create_engine(DATABASE_URL)
+Base = declarative_base()
+SessionLocal =sessionmaker(bind=engine,expire_on_commit=False)

@@ -4,3 +4,4 @@ FastAPI
 pydantic
 passlib
 jose
+jwt
