@@ -38,7 +38,7 @@ def get_session():
         session.close()
 
 @app.post("/register")
-def register_user(user: schemas.Usercreate, session: Session = Depends(get_session)):
+def register_user(user: schemas.UserCreate, session: Session = Depends(get_session)):
     existing_user = session.query(models.User).filter_by(email=user.email).first()
     if existing_user:
         raise HTTPException(status_code=400, detail="Email already registered")
