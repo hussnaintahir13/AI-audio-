@@ -11,7 +11,13 @@ from authbearer import JWTBearer
 from functools import wraps
 from utils import create_access_token,create_refresh_token,verify_password,get_hashed_password
 import psycopg2
+from fastapi.responses import HTMLResponse
+from fastapi import HTTPException, status
+from sqlalchemy.exc import SQLAlchemyError
 
+#references
+#https://medium.com/@chnarsimha986/fastapi-login-logout-changepassword-4c12e92d41e2
+#https://medium.com/@sandyjtech/creating-a-database-using-python-and-sqlalchemy-422b7ba39d7e
 
 ACCESS_TOKEN_EXPIRE_MINUTES = 30  # 30 minutes
 REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7 # 7 days
