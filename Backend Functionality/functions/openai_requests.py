@@ -3,11 +3,9 @@ from decouple import config
 
 from functions.database import get_recent_messages
 
-#OPEN_AI_ORG= org-gWeUYvUAOUAvHIUz71P2e1Sk
-#OPEN_AI_KEY=sk-proj-fvLYrIP0cpYaoXRRRWdCT3BlbkFJO8iib2rVe1p5kTD20uS9
 # Retrieve Enviornment Variables
-openai.organization = "org-gWeUYvUAOUAvHIUz71P2e1Sk" #config("OPEN_AI_ORG")
-openai.api_key ="sk-proj-fvLYrIP0cpYaoXRRRWdCT3BlbkFJO8iib2rVe1p5kTD20uS9"# config("OPEN_AI_KEY")
+openai.organization = config("OPEN_AI_ORG")
+openai.api_key = config("OPEN_AI_KEY")
 # Open AI - Whisper
 # Convert our input audio to text
 def convert_audio_to_text(audio_file):
