@@ -1,7 +1,11 @@
-# AI Voice Assistant project
+# AI Voice Assistant project by Hussnain
 
 <p align="center">
+<<<<<<< HEAD
+  <a " target="blank"><img src="https://res.cloudinary.com/https-mpcsj-com/image/upload/v1685210551/Thumbnail2_zqnbo3.jpg" width="320" alt="Project logo" /></a>
+=======
   <a><img src="https://res.cloudinary.com/https-mpcsj-com/image/upload/v1685210551/Thumbnail2_zqnbo3.jpg" width="320" alt="Project logo" /></a>
+>>>>>>> 84cfa3496d143368a1af6a7edb9bca12ed5110c8
 </p>
 
 ## Repository Structure
